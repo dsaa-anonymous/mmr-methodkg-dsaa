@@ -1,0 +1,33 @@
+{
+  "repo_root": "/home/jovyan/MethodKG_Clean",
+  "input": "/home/jovyan/MethodKG_Clean/data/benchmark/methodkg_labeled_benchmark_v3_modeling.csv",
+  "outdir": "/home/jovyan/MethodKG_Clean/experiments/text_only/text_only_all/design_binary/random_cluster_stratified/transformer",
+  "target": "target_design_binary",
+  "split_col": "split_random_cluster_stratified",
+  "task_type": "auto",
+  "text_mode": "title_abstract",
+  "drop_unclear": true,
+  "model_name": "allenai/scibert_scivocab_uncased",
+  "max_length": 512,
+  "epochs": 5.0,
+  "batch_size": 8,
+  "learning_rate": 2e-05,
+  "weight_decay": 0.01,
+  "warmup_ratio": 0.06,
+  "seed": 42,
+  "no_class_weights": false,
+  "fp16": false,
+  "gradient_accumulation_steps": 1,
+  "overwrite": true,
+  "task_type_resolved": "binary",
+  "label_info": {
+    "label_mapping": {
+      "0": 0,
+      "1": 1
+    }
+  },
+  "num_labels": 2,
+  "n_train": 1750,
+  "n_validation": 376,
+  "n_test": 374
+}

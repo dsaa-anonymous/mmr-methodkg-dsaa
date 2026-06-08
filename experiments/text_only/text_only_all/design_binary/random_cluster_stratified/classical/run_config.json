@@ -1,0 +1,37 @@
+{
+  "repo_root": "/home/jovyan/MethodKG_Clean",
+  "input": "/home/jovyan/MethodKG_Clean/data/benchmark/methodkg_labeled_benchmark_v3_modeling.csv",
+  "outdir": "/home/jovyan/MethodKG_Clean/experiments/text_only/text_only_all/design_binary/random_cluster_stratified/classical",
+  "target": "target_design_binary",
+  "split_col": "split_random_cluster_stratified",
+  "text_mode": "title_abstract",
+  "task_type": "auto",
+  "drop_unclear": true,
+  "models": [
+    "regex",
+    "tfidf_lr",
+    "tfidf_svm",
+    "frozen_embedding_lr",
+    "frozen_embedding_mlp"
+  ],
+  "max_features": 100000,
+  "min_df": 2,
+  "ngram_max": 2,
+  "calibrate_svm": true,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_batch_size": 32,
+  "cache_embeddings": true,
+  "seed": 42,
+  "embedding_cache_dir": "/home/jovyan/MethodKG_Clean/artifacts/features/text_embeddings_minilm_v1",
+  "overwrite": true,
+  "task_type_resolved": "binary",
+  "label_info": {
+    "label_mapping": {
+      "0": 0,
+      "1": 1
+    }
+  },
+  "n_train": 1750,
+  "n_validation": 376,
+  "n_test": 374
+}
