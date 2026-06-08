@@ -1,0 +1,2 @@
+accuracy,macro_f1,weighted_f1,roc_auc_macro_ovr,pr_auc_macro,model,label_type,threshold
+0.39037433155080214,0.3528771759462015,0.39842634116596004,,,metadata_svm,multiclass,

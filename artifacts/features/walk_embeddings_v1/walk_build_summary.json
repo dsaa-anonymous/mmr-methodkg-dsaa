@@ -1,0 +1,55 @@
+{
+  "award_rows": 32161,
+  "unique_awards": 32161,
+  "method": "both",
+  "embedding_dim": 64,
+  "walk_length": 20,
+  "num_walks": 8,
+  "window_size": 5,
+  "epochs": 5,
+  "projection_sources": [
+    "person",
+    "institution",
+    "program"
+  ],
+  "metapath_sources": [
+    "person",
+    "institution",
+    "program",
+    "nsforg"
+  ],
+  "metapaths": "award-person-award,award-institution-award,award-program-award,award-nsforg-award",
+  "node2vec_graph": {
+    "nodes": 32161,
+    "edges": 1598298,
+    "degree_mean": 99.3935511955474,
+    "degree_median": 74.0,
+    "degree_max": 1007,
+    "isolated_nodes": 8
+  },
+  "node2vec_walk_count": 257288,
+  "parsed_metapaths": [
+    [
+      "award",
+      "person",
+      "award"
+    ],
+    [
+      "award",
+      "institution",
+      "award"
+    ],
+    [
+      "award",
+      "program",
+      "award"
+    ],
+    [
+      "award",
+      "nsforg",
+      "award"
+    ]
+  ],
+  "metapath2vec_walk_count": 1028128,
+  "elapsed_seconds": 871.586
+}

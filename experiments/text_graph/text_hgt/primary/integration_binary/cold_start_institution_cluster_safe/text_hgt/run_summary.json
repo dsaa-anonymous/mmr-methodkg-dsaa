@@ -1,0 +1,22 @@
+{
+  "target": "target_integration_binary",
+  "split_col": "split_cold_start_institution_cluster_safe",
+  "label_to_id": {
+    "0": 0,
+    "1": 1
+  },
+  "device": "cuda",
+  "hidden_channels": 128,
+  "num_layers": 2,
+  "heads": 4,
+  "dropout": 0.35,
+  "lr": 0.003,
+  "epochs_ran": 90,
+  "best_epoch": 50,
+  "best_val_macro_f1": 0.7986042530778853,
+  "threshold": null,
+  "n_train": 2253,
+  "n_validation": 133,
+  "n_test": 114,
+  "note": "TG4 text+HGT baseline. Award nodes use text embeddings with heterogeneous HGT message passing."
+}

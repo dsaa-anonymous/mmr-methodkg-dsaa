@@ -1,0 +1,7 @@
+,pred_explicit_mmr,pred_implicit_mmr,pred_multi_method_not_mmr,pred_no_method_signal,pred_qual_only,pred_quant_only
+true_explicit_mmr,91,2,1,4,3,13
+true_implicit_mmr,29,7,0,14,0,9
+true_multi_method_not_mmr,25,0,0,7,1,18
+true_no_method_signal,15,0,2,29,2,8
+true_qual_only,12,0,0,3,3,22
+true_quant_only,20,0,1,9,0,24

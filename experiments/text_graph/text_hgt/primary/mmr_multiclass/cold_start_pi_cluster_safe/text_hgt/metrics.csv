@@ -1,0 +1,4 @@
+﻿model,target,split_col,eval_split,n,best_epoch,best_val_macro_f1,seed,accuracy,macro_f1,weighted_f1
+text_hgt,target_mmr_multiclass,split_cold_start_pi_cluster_safe,train,1735,141,0.41351986921285727,42,0.7734870317002882,0.7870784229225488,0.778021206063279
+text_hgt,target_mmr_multiclass,split_cold_start_pi_cluster_safe,validation,400,141,0.41351986921285727,42,0.435,0.41351986921285727,0.4429984909270892
+text_hgt,target_mmr_multiclass,split_cold_start_pi_cluster_safe,test,365,141,0.41351986921285727,42,0.4301369863013699,0.39228550298402415,0.4394411571195588

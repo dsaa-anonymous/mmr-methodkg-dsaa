@@ -1,0 +1,7 @@
+,explicit_mmr,implicit_mmr,multi_method_not_mmr,no_method_signal,qual_only,quant_only
+explicit_mmr,18,4,2,5,1,7
+implicit_mmr,10,0,1,1,0,2
+multi_method_not_mmr,2,2,2,6,7,4
+no_method_signal,1,1,4,5,3,4
+qual_only,0,0,2,2,3,1
+quant_only,1,2,3,2,1,5

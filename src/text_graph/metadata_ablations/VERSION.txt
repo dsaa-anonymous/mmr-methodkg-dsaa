@@ -1,0 +1,1 @@
+v4_final: fixes multiclass rare-class score-column alignment for metadata-only/text+metadata ablations

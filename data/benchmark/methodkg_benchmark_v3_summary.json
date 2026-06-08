@@ -1,0 +1,185 @@
+{
+  "created_by": "create_methodkg_labeled_benchmark_v3_final_gold.py",
+  "key_counts": {
+    "rows": 2500,
+    "unique_award_ids": 2500,
+    "unique_annotation_ids": 2500,
+    "unique_project_clusters": 2045,
+    "duplicate_project_clusters": 294,
+    "rows_in_duplicate_project_clusters": 749,
+    "missing_abstracts": 0,
+    "missing_titles": 0,
+    "start_year_min": 2000,
+    "start_year_max": 2025
+  },
+  "split_leakage_checks": [
+    {
+      "split_column": "split_random_cluster_stratified",
+      "check": "duplicate_text_cluster",
+      "group_column": "project_cluster_id",
+      "crossing_group_count": 0,
+      "crossing_row_count": 0
+    },
+    {
+      "split_column": "split_random_cluster_stratified",
+      "check": "same_pi",
+      "group_column": "person_id",
+      "crossing_group_count": 76,
+      "crossing_row_count": 204
+    },
+    {
+      "split_column": "split_random_cluster_stratified",
+      "check": "same_institution",
+      "group_column": "organization_clean",
+      "crossing_group_count": 253,
+      "crossing_row_count": 1771
+    },
+    {
+      "split_column": "split_random_cluster_stratified",
+      "check": "same_program",
+      "group_column": "primary_program_key",
+      "crossing_group_count": 63,
+      "crossing_row_count": 2394
+    },
+    {
+      "split_column": "split_temporal_cluster_safe",
+      "check": "duplicate_text_cluster",
+      "group_column": "project_cluster_id",
+      "crossing_group_count": 0,
+      "crossing_row_count": 0
+    },
+    {
+      "split_column": "split_temporal_cluster_safe",
+      "check": "same_pi",
+      "group_column": "person_id",
+      "crossing_group_count": 75,
+      "crossing_row_count": 189
+    },
+    {
+      "split_column": "split_temporal_cluster_safe",
+      "check": "same_institution",
+      "group_column": "organization_clean",
+      "crossing_group_count": 279,
+      "crossing_row_count": 1860
+    },
+    {
+      "split_column": "split_temporal_cluster_safe",
+      "check": "same_program",
+      "group_column": "primary_program_key",
+      "crossing_group_count": 34,
+      "crossing_row_count": 1961
+    },
+    {
+      "split_column": "split_edu_to_eng_cluster_safe",
+      "check": "duplicate_text_cluster",
+      "group_column": "project_cluster_id",
+      "crossing_group_count": 0,
+      "crossing_row_count": 0
+    },
+    {
+      "split_column": "split_edu_to_eng_cluster_safe",
+      "check": "same_pi",
+      "group_column": "person_id",
+      "crossing_group_count": 21,
+      "crossing_row_count": 57
+    },
+    {
+      "split_column": "split_edu_to_eng_cluster_safe",
+      "check": "same_institution",
+      "group_column": "organization_clean",
+      "crossing_group_count": 128,
+      "crossing_row_count": 1195
+    },
+    {
+      "split_column": "split_edu_to_eng_cluster_safe",
+      "check": "same_program",
+      "group_column": "primary_program_key",
+      "crossing_group_count": 16,
+      "crossing_row_count": 949
+    },
+    {
+      "split_column": "split_cold_start_pi_cluster_safe",
+      "check": "duplicate_text_cluster",
+      "group_column": "project_cluster_id",
+      "crossing_group_count": 0,
+      "crossing_row_count": 0
+    },
+    {
+      "split_column": "split_cold_start_pi_cluster_safe",
+      "check": "same_pi",
+      "group_column": "person_id",
+      "crossing_group_count": 0,
+      "crossing_row_count": 0
+    },
+    {
+      "split_column": "split_cold_start_pi_cluster_safe",
+      "check": "same_institution",
+      "group_column": "organization_clean",
+      "crossing_group_count": 235,
+      "crossing_row_count": 1678
+    },
+    {
+      "split_column": "split_cold_start_pi_cluster_safe",
+      "check": "same_program",
+      "group_column": "primary_program_key",
+      "crossing_group_count": 68,
+      "crossing_row_count": 2404
+    },
+    {
+      "split_column": "split_cold_start_institution_cluster_safe",
+      "check": "duplicate_text_cluster",
+      "group_column": "project_cluster_id",
+      "crossing_group_count": 0,
+      "crossing_row_count": 0
+    },
+    {
+      "split_column": "split_cold_start_institution_cluster_safe",
+      "check": "same_pi",
+      "group_column": "person_id",
+      "crossing_group_count": 0,
+      "crossing_row_count": 0
+    },
+    {
+      "split_column": "split_cold_start_institution_cluster_safe",
+      "check": "same_institution",
+      "group_column": "organization_clean",
+      "crossing_group_count": 0,
+      "crossing_row_count": 0
+    },
+    {
+      "split_column": "split_cold_start_institution_cluster_safe",
+      "check": "same_program",
+      "group_column": "primary_program_key",
+      "crossing_group_count": 45,
+      "crossing_row_count": 2180
+    },
+    {
+      "split_column": "split_cross_program_cluster_safe",
+      "check": "duplicate_text_cluster",
+      "group_column": "project_cluster_id",
+      "crossing_group_count": 0,
+      "crossing_row_count": 0
+    },
+    {
+      "split_column": "split_cross_program_cluster_safe",
+      "check": "same_pi",
+      "group_column": "person_id",
+      "crossing_group_count": 17,
+      "crossing_row_count": 47
+    },
+    {
+      "split_column": "split_cross_program_cluster_safe",
+      "check": "same_institution",
+      "group_column": "organization_clean",
+      "crossing_group_count": 114,
+      "crossing_row_count": 1062
+    },
+    {
+      "split_column": "split_cross_program_cluster_safe",
+      "check": "same_program",
+      "group_column": "primary_program_key",
+      "crossing_group_count": 0,
+      "crossing_row_count": 0
+    }
+  ]
+}

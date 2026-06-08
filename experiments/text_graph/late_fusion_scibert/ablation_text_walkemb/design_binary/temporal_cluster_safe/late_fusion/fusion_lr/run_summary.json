@@ -1,0 +1,25 @@
+{
+  "model": "fusion_lr",
+  "target": "target_design_binary",
+  "split_col": "split_temporal_cluster_safe",
+  "feature_groups": {
+    "text_embeddings": 768,
+    "node2vec": 65,
+    "metapath2vec": 65
+  },
+  "n_features_total": 898,
+  "numeric_cols": 898,
+  "categorical_cols": 0,
+  "dropped_all_missing_features": 0,
+  "label_to_id": {
+    "0": 0,
+    "1": 1
+  },
+  "id_to_label": {
+    "0": "0",
+    "1": "1"
+  },
+  "class_weight": "balanced",
+  "seed": 42,
+  "threshold_metric": "macro_f1"
+}

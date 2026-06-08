@@ -1,0 +1,14 @@
+{
+  "num_awards_encoded": 32161,
+  "embedding_dim": 768,
+  "model_name": "allenai/scibert_scivocab_uncased",
+  "backend": "transformers",
+  "text_cols": [
+    "title_clean",
+    "abstract_clean"
+  ],
+  "normalize": false,
+  "max_length": 512,
+  "input_awards": "/home/jovyan/MethodKG_Clean/data/processed/methodkg_outputs_v7_clustered_from_cleaned/cleaned_nsf_awards_2000_2025.csv",
+  "input_benchmark": "/home/jovyan/MethodKG_Clean/data/benchmark/methodkg_labeled_benchmark_v3_modeling.csv"
+}

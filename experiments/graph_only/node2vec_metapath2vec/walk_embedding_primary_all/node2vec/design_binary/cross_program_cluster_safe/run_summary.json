@@ -1,0 +1,18 @@
+{
+  "target": "target_design_binary",
+  "split_col": "split_cross_program_cluster_safe",
+  "task_type": "binary",
+  "feature_count": 65,
+  "train_rows": 2228,
+  "validation_rows": 54,
+  "test_rows": 218,
+  "models": [
+    "dummy",
+    "emb_lr",
+    "emb_svm",
+    "emb_rf",
+    "emb_extra_trees"
+  ],
+  "tune_threshold": false,
+  "threshold_objective": "macro_f1"
+}

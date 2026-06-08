@@ -1,0 +1,26 @@
+{
+  "target": "target_mmr_multiclass",
+  "split_col": "split_random_cluster_stratified",
+  "label_to_id": {
+    "explicit_mmr": 0,
+    "implicit_mmr": 1,
+    "multi_method_not_mmr": 2,
+    "no_method_signal": 3,
+    "qual_only": 4,
+    "quant_only": 5
+  },
+  "device": "cuda",
+  "hidden_channels": 128,
+  "num_layers": 2,
+  "heads": 4,
+  "dropout": 0.35,
+  "lr": 0.003,
+  "epochs_ran": 113,
+  "best_epoch": 73,
+  "best_val_macro_f1": 0.3579517321725784,
+  "threshold": null,
+  "n_train": 1750,
+  "n_validation": 376,
+  "n_test": 374,
+  "note": "Structural-only transductive HGT baseline. No award text embeddings used."
+}

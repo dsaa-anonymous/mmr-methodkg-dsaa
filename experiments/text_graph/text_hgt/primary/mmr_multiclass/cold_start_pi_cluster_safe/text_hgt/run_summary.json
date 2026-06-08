@@ -1,0 +1,26 @@
+{
+  "target": "target_mmr_multiclass",
+  "split_col": "split_cold_start_pi_cluster_safe",
+  "label_to_id": {
+    "explicit_mmr": 0,
+    "implicit_mmr": 1,
+    "multi_method_not_mmr": 2,
+    "no_method_signal": 3,
+    "qual_only": 4,
+    "quant_only": 5
+  },
+  "device": "cuda",
+  "hidden_channels": 128,
+  "num_layers": 2,
+  "heads": 4,
+  "dropout": 0.35,
+  "lr": 0.003,
+  "epochs_ran": 181,
+  "best_epoch": 141,
+  "best_val_macro_f1": 0.41351986921285727,
+  "threshold": null,
+  "n_train": 1735,
+  "n_validation": 400,
+  "n_test": 365,
+  "note": "TG4 text+HGT baseline. Award nodes use text embeddings with heterogeneous HGT message passing."
+}

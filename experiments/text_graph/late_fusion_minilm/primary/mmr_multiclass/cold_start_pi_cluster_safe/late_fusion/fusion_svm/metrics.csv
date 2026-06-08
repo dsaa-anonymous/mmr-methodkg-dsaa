@@ -1,0 +1,2 @@
+model,target,split_col,n_test,accuracy,macro_f1,weighted_f1,macro_ovr_roc_auc,macro_pr_auc,n_train,n_validation,n_classes
+fusion_svm,target_mmr_multiclass,split_cold_start_pi_cluster_safe,365,0.3150684931506849,0.2708287415869386,0.31361740312005915,0.6371866679586743,0.29248997257794634,1735,400,6

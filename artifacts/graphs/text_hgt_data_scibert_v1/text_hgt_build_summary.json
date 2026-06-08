@@ -1,0 +1,22 @@
+{
+  "award_nodes": 32810,
+  "person_nodes": 47812,
+  "institution_nodes": 2945,
+  "program_nodes": 452,
+  "nsf_org_nodes": 5,
+  "directorate_nodes": 2,
+  "state_nodes": 56,
+  "year_nodes": 26,
+  "edge_types": 22,
+  "total_dedup_edges": 589822,
+  "benchmark_nodes": 2500,
+  "benchmark_nodes_expected": 2500,
+  "award_feature_dim": 775,
+  "text_embedding_dim": 768,
+  "missing_text_embeddings": 0,
+  "award_feature_mode": "text_plus_structural",
+  "include_award_amount": false,
+  "drop_text_length_features": false,
+  "text_embeddings_file": "/home/jovyan/MethodKG_Clean/artifacts/features/text_hgt_embeddings_scibert_v1/methodkg_simteg_text_embeddings.csv",
+  "note": "TG4 text+HGT graph. Award nodes use text embeddings, optionally concatenated with structural metadata."
+}

@@ -1,0 +1,9 @@
+{
+  "input": null,
+  "embedding_family": "scibert",
+  "model_name": "allenai/scibert_scivocab_uncased",
+  "backend": "transformers",
+  "rows": 2500,
+  "embedding_dim": 768,
+  "normalize": false
+}

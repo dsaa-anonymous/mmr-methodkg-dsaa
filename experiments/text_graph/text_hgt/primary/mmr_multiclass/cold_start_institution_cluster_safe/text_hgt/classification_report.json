@@ -1,0 +1,155 @@
+{
+  "train": {
+    "explicit_mmr": {
+      "precision": 0.6993865030674846,
+      "recall": 0.6514285714285715,
+      "f1-score": 0.6745562130177515,
+      "support": 700.0
+    },
+    "implicit_mmr": {
+      "precision": 0.4289855072463768,
+      "recall": 0.4,
+      "f1-score": 0.413986013986014,
+      "support": 370.0
+    },
+    "multi_method_not_mmr": {
+      "precision": 0.5050505050505051,
+      "recall": 0.17006802721088435,
+      "f1-score": 0.2544529262086514,
+      "support": 294.0
+    },
+    "no_method_signal": {
+      "precision": 0.7324324324324324,
+      "recall": 0.846875,
+      "f1-score": 0.7855072463768116,
+      "support": 320.0
+    },
+    "qual_only": {
+      "precision": 0.4398976982097187,
+      "recall": 0.7078189300411523,
+      "f1-score": 0.5425867507886435,
+      "support": 243.0
+    },
+    "quant_only": {
+      "precision": 0.5050505050505051,
+      "recall": 0.6134969325153374,
+      "f1-score": 0.554016620498615,
+      "support": 326.0
+    },
+    "accuracy": 0.5756768752774079,
+    "macro avg": {
+      "precision": 0.5518005251761705,
+      "recall": 0.5649479101993243,
+      "f1-score": 0.5375176284794145,
+      "support": 2253.0
+    },
+    "weighted avg": {
+      "precision": 0.5782068450967829,
+      "recall": 0.5756768752774079,
+      "f1-score": 0.5610269206202234,
+      "support": 2253.0
+    }
+  },
+  "validation": {
+    "explicit_mmr": {
+      "precision": 0.6,
+      "recall": 0.6923076923076923,
+      "f1-score": 0.6428571428571429,
+      "support": 26.0
+    },
+    "implicit_mmr": {
+      "precision": 0.18181818181818182,
+      "recall": 0.15384615384615385,
+      "f1-score": 0.16666666666666666,
+      "support": 13.0
+    },
+    "multi_method_not_mmr": {
+      "precision": 0.5,
+      "recall": 0.09523809523809523,
+      "f1-score": 0.16,
+      "support": 21.0
+    },
+    "no_method_signal": {
+      "precision": 0.5227272727272727,
+      "recall": 0.6764705882352942,
+      "f1-score": 0.5897435897435898,
+      "support": 34.0
+    },
+    "qual_only": {
+      "precision": 0.5,
+      "recall": 0.47058823529411764,
+      "f1-score": 0.48484848484848486,
+      "support": 17.0
+    },
+    "quant_only": {
+      "precision": 0.2857142857142857,
+      "recall": 0.36363636363636365,
+      "f1-score": 0.32,
+      "support": 22.0
+    },
+    "accuracy": 0.45864661654135336,
+    "macro avg": {
+      "precision": 0.4317099567099567,
+      "recall": 0.40868118809295284,
+      "f1-score": 0.394019314019314,
+      "support": 133.0
+    },
+    "weighted avg": {
+      "precision": 0.45881261595547307,
+      "recall": 0.45864661654135336,
+      "f1-score": 0.43289217048615547,
+      "support": 133.0
+    }
+  },
+  "test": {
+    "explicit_mmr": {
+      "precision": 0.6875,
+      "recall": 0.5945945945945946,
+      "f1-score": 0.6376811594202898,
+      "support": 37.0
+    },
+    "implicit_mmr": {
+      "precision": 0.3076923076923077,
+      "recall": 0.2857142857142857,
+      "f1-score": 0.2962962962962963,
+      "support": 14.0
+    },
+    "multi_method_not_mmr": {
+      "precision": 0.6666666666666666,
+      "recall": 0.08695652173913043,
+      "f1-score": 0.15384615384615385,
+      "support": 23.0
+    },
+    "no_method_signal": {
+      "precision": 0.4,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.5,
+      "support": 18.0
+    },
+    "qual_only": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 8.0
+    },
+    "quant_only": {
+      "precision": 0.21428571428571427,
+      "recall": 0.42857142857142855,
+      "f1-score": 0.2857142857142857,
+      "support": 14.0
+    },
+    "accuracy": 0.40350877192982454,
+    "macro avg": {
+      "precision": 0.37935744810744815,
+      "recall": 0.3437505828810176,
+      "f1-score": 0.31225631587950425,
+      "support": 114.0
+    },
+    "weighted avg": {
+      "precision": 0.48489934772829507,
+      "recall": 0.40350877192982454,
+      "f1-score": 0.38842818057158257,
+      "support": 114.0
+    }
+  }
+}

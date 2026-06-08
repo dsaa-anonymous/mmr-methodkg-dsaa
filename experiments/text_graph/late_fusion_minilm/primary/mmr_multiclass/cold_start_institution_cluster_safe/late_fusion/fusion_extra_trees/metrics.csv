@@ -1,0 +1,2 @@
+model,target,split_col,n_test,accuracy,macro_f1,weighted_f1,macro_ovr_roc_auc,macro_pr_auc,n_train,n_validation,n_classes
+fusion_extra_trees,target_mmr_multiclass,split_cold_start_institution_cluster_safe,114,0.4298245614035088,0.21177827460165374,0.3048645781386289,0.6988829353976674,0.3751373979718873,2253,133,6

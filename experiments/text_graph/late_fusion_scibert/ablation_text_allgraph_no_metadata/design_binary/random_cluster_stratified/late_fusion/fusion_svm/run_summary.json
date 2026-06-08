@@ -1,0 +1,26 @@
+{
+  "model": "fusion_svm",
+  "target": "target_design_binary",
+  "split_col": "split_random_cluster_stratified",
+  "feature_groups": {
+    "text_embeddings": 768,
+    "historical_graph_features": 126,
+    "node2vec": 65,
+    "metapath2vec": 65
+  },
+  "n_features_total": 1024,
+  "numeric_cols": 1017,
+  "categorical_cols": 7,
+  "dropped_all_missing_features": 0,
+  "label_to_id": {
+    "0": 0,
+    "1": 1
+  },
+  "id_to_label": {
+    "0": "0",
+    "1": "1"
+  },
+  "class_weight": "balanced",
+  "seed": 42,
+  "threshold_metric": "macro_f1"
+}

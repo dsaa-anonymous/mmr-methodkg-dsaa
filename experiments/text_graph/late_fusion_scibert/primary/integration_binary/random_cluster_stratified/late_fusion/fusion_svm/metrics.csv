@@ -1,0 +1,2 @@
+model,target,split_col,n_test,accuracy,macro_f1,weighted_f1,positive_f1,positive_precision,positive_recall,roc_auc,pr_auc,n_train,n_validation,n_classes
+fusion_svm,target_integration_binary,split_random_cluster_stratified,374,0.7459893048128342,0.7453320431494821,0.7463006392849484,0.7323943661971831,0.7142857142857143,0.7514450867052023,0.8484743910505277,0.8219610304027912,1750,376,2

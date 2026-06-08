@@ -1,0 +1,21 @@
+{
+  "award_nodes": 32810,
+  "person_nodes": 47812,
+  "institution_nodes": 2945,
+  "program_nodes": 452,
+  "nsf_org_nodes": 5,
+  "directorate_nodes": 2,
+  "state_nodes": 56,
+  "year_nodes": 26,
+  "edge_types": 22,
+  "total_dedup_edges": 589822,
+  "benchmark_nodes": 2500,
+  "benchmark_nodes_expected": 2500,
+  "award_feature_dim": 7,
+  "include_award_amount": false,
+  "drop_text_length_features": false,
+  "input_awards": "/home/jovyan/MethodKG_Clean/data/processed/methodkg_outputs_v7_clustered_from_cleaned/cleaned_nsf_awards_2000_2025.csv",
+  "input_benchmark": "/home/jovyan/MethodKG_Clean/data/benchmark/methodkg_labeled_benchmark_v3_modeling.csv",
+  "input_award_pi_edges": "/home/jovyan/MethodKG_Clean/data/edges/award_pi_edges.csv",
+  "note": "Transductive heterogeneous structural HGT graph. No award text embeddings are used."
+}

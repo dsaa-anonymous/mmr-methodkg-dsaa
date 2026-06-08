@@ -1,0 +1,24 @@
+{
+  "model": "fusion_svm",
+  "target": "target_integration_binary",
+  "split_col": "split_cold_start_institution_cluster_safe",
+  "feature_groups": {
+    "text_embeddings": 768,
+    "historical_graph_features": 126
+  },
+  "n_features_total": 894,
+  "numeric_cols": 887,
+  "categorical_cols": 7,
+  "dropped_all_missing_features": 0,
+  "label_to_id": {
+    "0": 0,
+    "1": 1
+  },
+  "id_to_label": {
+    "0": "0",
+    "1": "1"
+  },
+  "class_weight": "balanced",
+  "seed": 42,
+  "threshold_metric": "macro_f1"
+}

@@ -1,0 +1,27 @@
+{
+  "model": "fusion_extra_trees",
+  "target": "target_design_binary",
+  "split_col": "split_random_cluster_stratified",
+  "feature_groups": {
+    "text_embeddings": 768,
+    "historical_graph_features": 126,
+    "node2vec": 65,
+    "metapath2vec": 65,
+    "metadata": 6
+  },
+  "n_features_total": 1030,
+  "numeric_cols": 1018,
+  "categorical_cols": 12,
+  "dropped_all_missing_features": 0,
+  "label_to_id": {
+    "0": 0,
+    "1": 1
+  },
+  "id_to_label": {
+    "0": "0",
+    "1": "1"
+  },
+  "class_weight": "balanced",
+  "seed": 42,
+  "threshold_metric": null
+}

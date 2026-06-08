@@ -1,0 +1,2 @@
+accuracy,macro_f1,weighted_f1,positive_f1,precision,recall,roc_auc,pr_auc,model,label_type,threshold
+0.6228070175438597,0.3837837837837838,0.47804646752015173,0.0,0.0,0.0,0.5,0.37719298245614036,dummy,binary,

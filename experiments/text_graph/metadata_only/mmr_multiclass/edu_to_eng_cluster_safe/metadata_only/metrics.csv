@@ -1,0 +1,6 @@
+accuracy,macro_f1,weighted_f1,roc_auc_macro_ovr,pr_auc_macro,model,target,split_col,label_type,n_train,n_val,n_test,n_features_raw,n_text_embedding_cols,n_metadata_cols,threshold
+0.28362573099415206,0.07365223993925589,0.12533802235276878,,,dummy,target_mmr_multiclass,split_edu_to_eng_cluster_safe,multiclass,1827,331,342,9,0,9,
+0.14912280701754385,0.12229721399385736,0.11174677060007869,,,metadata_lr,target_mmr_multiclass,split_edu_to_eng_cluster_safe,multiclass,1827,331,342,9,0,9,
+0.14327485380116958,0.08827753955927702,0.09785529553902539,,,metadata_svm,target_mmr_multiclass,split_edu_to_eng_cluster_safe,multiclass,1827,331,342,9,0,9,
+0.24269005847953215,0.11040941459702365,0.14417559911480393,,,metadata_mlp,target_mmr_multiclass,split_edu_to_eng_cluster_safe,multiclass,1827,331,342,9,0,9,
+0.1871345029239766,0.1390472315715313,0.1582173148155491,,,metadata_extra_trees,target_mmr_multiclass,split_edu_to_eng_cluster_safe,multiclass,1827,331,342,9,0,9,

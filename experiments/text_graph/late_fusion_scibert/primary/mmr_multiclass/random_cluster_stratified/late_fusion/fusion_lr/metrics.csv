@@ -1,0 +1,2 @@
+model,target,split_col,n_test,accuracy,macro_f1,weighted_f1,macro_ovr_roc_auc,macro_pr_auc,n_train,n_validation,n_classes
+fusion_lr,target_mmr_multiclass,split_random_cluster_stratified,374,0.47058823529411764,0.4331504570781937,0.46963864562185204,0.7746759646425154,0.4214788868935899,1750,376,6

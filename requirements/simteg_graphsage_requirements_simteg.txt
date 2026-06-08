@@ -1,0 +1,8 @@
+numpy>=1.24
+pandas>=2.0
+scikit-learn>=1.3
+tqdm>=4.66
+torch>=2.1
+torch-geometric>=2.5
+transformers>=4.40,<4.45
+sentence-transformers>=3.0,<3.1

@@ -1,0 +1,89 @@
+{
+  "num_award_nodes": 32161,
+  "num_edges": 516227,
+  "feature_dim": 892,
+  "benchmark_nodes": 2500,
+  "benchmark_nodes_expected": 2500,
+  "benchmark_only_nodes_added": 0,
+  "bidirectional": false,
+  "edge_direction": "temporal older_to_newer",
+  "label_maps": {
+    "target_integration_binary": {
+      "0": 0,
+      "1": 1
+    },
+    "target_design_binary": {
+      "0": 0,
+      "1": 1
+    },
+    "target_mmr_binary": {
+      "0": 0,
+      "1": 1
+    },
+    "target_mmr_multiclass": {
+      "explicit_mmr": 0,
+      "implicit_mmr": 1,
+      "multi_method_not_mmr": 2,
+      "no_method_signal": 3,
+      "qual_only": 4,
+      "quant_only": 5
+    },
+    "target_qual_binary": {
+      "0": 0,
+      "1": 1
+    },
+    "target_quant_binary": {
+      "0": 0,
+      "1": 1
+    },
+    "target_method_signal_binary": {
+      "0": 0,
+      "1": 1
+    }
+  },
+  "edge_summary": [
+    {
+      "edge_source": "person",
+      "groups_used": 15344,
+      "singleton_groups_skipped": 32468,
+      "edges_added": 86534,
+      "max_prior_per_node_per_group": 10,
+      "bidirectional": 0
+    },
+    {
+      "edge_source": "institution",
+      "groups_used": 1814,
+      "singleton_groups_skipped": 1131,
+      "edges_added": 115927,
+      "max_prior_per_node_per_group": 5,
+      "bidirectional": 0
+    },
+    {
+      "edge_source": "program",
+      "groups_used": 349,
+      "singleton_groups_skipped": 103,
+      "edges_added": 292603,
+      "max_prior_per_node_per_group": 8,
+      "bidirectional": 0
+    },
+    {
+      "edge_source": "nsf_org",
+      "groups_used": 5,
+      "singleton_groups_skipped": 0,
+      "edges_added": 15239,
+      "max_prior_per_node_per_group": 2,
+      "bidirectional": 0
+    },
+    {
+      "edge_source": "directorate",
+      "groups_used": 2,
+      "singleton_groups_skipped": 0,
+      "edges_added": 5924,
+      "max_prior_per_node_per_group": 1,
+      "bidirectional": 0
+    }
+  ],
+  "input_awards": "/home/jovyan/MethodKG_Clean/data/processed/methodkg_outputs_v7_clustered_from_cleaned/cleaned_nsf_awards_2000_2025.csv",
+  "input_benchmark": "/home/jovyan/MethodKG_Clean/data/benchmark/methodkg_labeled_benchmark_v3_modeling.csv",
+  "input_award_pi_edges": "/home/jovyan/MethodKG_Clean/data/edges/award_pi_edges.csv"
+}

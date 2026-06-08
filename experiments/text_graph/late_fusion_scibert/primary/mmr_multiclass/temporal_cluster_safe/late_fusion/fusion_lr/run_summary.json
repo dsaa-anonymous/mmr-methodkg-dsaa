@@ -1,0 +1,35 @@
+{
+  "model": "fusion_lr",
+  "target": "target_mmr_multiclass",
+  "split_col": "split_temporal_cluster_safe",
+  "feature_groups": {
+    "text_embeddings": 768,
+    "historical_graph_features": 126,
+    "node2vec": 65,
+    "metapath2vec": 65,
+    "metadata": 6
+  },
+  "n_features_total": 1030,
+  "numeric_cols": 1018,
+  "categorical_cols": 12,
+  "dropped_all_missing_features": 0,
+  "label_to_id": {
+    "explicit_mmr": 0,
+    "implicit_mmr": 1,
+    "multi_method_not_mmr": 2,
+    "no_method_signal": 3,
+    "qual_only": 4,
+    "quant_only": 5
+  },
+  "id_to_label": {
+    "0": "explicit_mmr",
+    "1": "implicit_mmr",
+    "2": "multi_method_not_mmr",
+    "3": "no_method_signal",
+    "4": "qual_only",
+    "5": "quant_only"
+  },
+  "class_weight": "balanced",
+  "seed": 42,
+  "threshold_metric": null
+}

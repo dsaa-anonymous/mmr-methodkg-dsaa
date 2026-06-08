@@ -1,0 +1,22 @@
+{
+  "target": "target_integration_binary",
+  "split_col": "split_cross_program_cluster_safe",
+  "label_to_id": {
+    "0": 0,
+    "1": 1
+  },
+  "device": "cuda",
+  "hidden_channels": 128,
+  "num_layers": 2,
+  "heads": 4,
+  "dropout": 0.35,
+  "lr": 0.003,
+  "epochs_ran": 96,
+  "best_epoch": 56,
+  "best_val_macro_f1": 0.7764636309875813,
+  "threshold": null,
+  "n_train": 2228,
+  "n_validation": 54,
+  "n_test": 218,
+  "note": "Structural-only transductive HGT baseline. No award text embeddings used."
+}

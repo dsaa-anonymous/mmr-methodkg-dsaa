@@ -1,0 +1,2 @@
+model,target,split_col,n_test,accuracy,macro_f1,weighted_f1,positive_f1,positive_precision,positive_recall,roc_auc,pr_auc,n_train,n_validation,n_classes,threshold,threshold_validation_metric
+fusion_svm,target_design_binary,split_temporal_cluster_safe,864,0.7766203703703703,0.5247267389662396,0.7642058988703258,0.17872340425531916,0.20588235294117646,0.15789473684210525,0.5292163376978698,0.1725814650508341,1249,387,2,0.38999999999999996,0.6055232902690529

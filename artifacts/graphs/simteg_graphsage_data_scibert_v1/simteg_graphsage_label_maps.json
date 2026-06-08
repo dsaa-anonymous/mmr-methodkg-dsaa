@@ -1,0 +1,34 @@
+{
+  "target_integration_binary": {
+    "0": 0,
+    "1": 1
+  },
+  "target_design_binary": {
+    "0": 0,
+    "1": 1
+  },
+  "target_mmr_binary": {
+    "0": 0,
+    "1": 1
+  },
+  "target_mmr_multiclass": {
+    "explicit_mmr": 0,
+    "implicit_mmr": 1,
+    "multi_method_not_mmr": 2,
+    "no_method_signal": 3,
+    "qual_only": 4,
+    "quant_only": 5
+  },
+  "target_qual_binary": {
+    "0": 0,
+    "1": 1
+  },
+  "target_quant_binary": {
+    "0": 0,
+    "1": 1
+  },
+  "target_method_signal_binary": {
+    "0": 0,
+    "1": 1
+  }
+}

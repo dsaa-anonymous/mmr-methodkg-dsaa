@@ -1,0 +1,4 @@
+﻿model,target,split_col,eval_split,n,best_epoch,best_val_macro_f1,seed,accuracy,macro_f1,weighted_f1
+text_hgt,target_mmr_multiclass,split_cold_start_institution_cluster_safe,train,2253,79,0.394019314019314,42,0.5756768752774079,0.5375176284794145,0.5610269206202234
+text_hgt,target_mmr_multiclass,split_cold_start_institution_cluster_safe,validation,133,79,0.394019314019314,42,0.45864661654135336,0.394019314019314,0.43289217048615547
+text_hgt,target_mmr_multiclass,split_cold_start_institution_cluster_safe,test,114,79,0.394019314019314,42,0.40350877192982454,0.31225631587950425,0.38842818057158257
