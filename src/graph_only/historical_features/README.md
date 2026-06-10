@@ -131,11 +131,3 @@ The feature builder creates features such as:
 - known static categorical metadata such as program, NSF organization, directorate, institution, state, and award instrument
 
 Historical features use **only awards with `start_year < target_start_year`**. Same-year awards are not used as prior history.
-
-## Important modeling note
-
-These are lightweight graph-only baselines, not full GNNs. They are useful for answering:
-
-> Does historical PI/institution/program/collaboration context contain predictive signal even without award text?
-
-Once you get TIDE access, you can build heavier graph models such as GraphSAGE, R-GCN, or HGT using the same graph schema.
