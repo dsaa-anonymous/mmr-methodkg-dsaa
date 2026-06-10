@@ -218,5 +218,3 @@ zip -r methodkg_hgt_structural_results.zip \
   hgt_structural_primary_summary.csv \
   -x "*/hgt_model.pt"
 ```
-
-Upload `methodkg_hgt_structural_results.zip` for interpretation.
