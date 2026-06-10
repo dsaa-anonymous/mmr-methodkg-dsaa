@@ -66,7 +66,7 @@ Then follow https://pytorch-geometric.readthedocs.io/ for the matching install c
 ```bash
 python create_text_hgt_embeddings.py \
   --awards cleaned_nsf_awards_2000_2025.csv \
-  --benchmark benchmark_v2/methodkg_labeled_benchmark_v2_modeling.csv \
+  --benchmark benchmark_v3/methodkg_labeled_benchmark_v2_modeling.csv \
   --outdir text_hgt_embeddings_scibert_v1 \
   --model_name allenai/scibert_scivocab_uncased \
   --backend transformers \
@@ -89,7 +89,7 @@ The filename contains `simteg` because the embedding utility is shared with the 
 ```bash
 python build_text_hgt_methodkg_graph.py \
   --awards cleaned_nsf_awards_2000_2025.csv \
-  --benchmark benchmark_v2/methodkg_labeled_benchmark_v2_modeling.csv \
+  --benchmark benchmark_v3/methodkg_labeled_benchmark_v2_modeling.csv \
   --award_pi_edges award_pi_edges.csv \
   --text_embeddings text_hgt_embeddings_scibert_v1/methodkg_simteg_text_embeddings.csv \
   --outdir text_hgt_data_scibert_v1
@@ -142,25 +142,6 @@ python run_text_hgt_all_splits.py \
   --tune_threshold
 ```
 
-## Optional larger L40 run
-
-```bash
-python run_text_hgt_all_splits.py \
-  --graph_dir text_hgt_data_scibert_v1 \
-  --outdir results/text_hgt_scibert_primary_all_h256_v1 \
-  --targets target_integration_binary target_design_binary target_mmr_multiclass \
-  --hidden_channels 256 \
-  --num_layers 3 \
-  --heads 4 \
-  --dropout 0.40 \
-  --lr 0.002 \
-  --epochs 400 \
-  --patience 50 \
-  --device cuda \
-  --use_amp \
-  --tune_threshold
-```
-
 Start with the default run first.
 
 ## Step 5: Summarize
@@ -186,7 +167,3 @@ zip -r methodkg_text_hgt_results_v1.zip \
 ```
 
 Upload `methodkg_text_hgt_results_v1.zip`.
-
-## Methodological note
-
-This is a transductive text+heterogeneous-GNN baseline over the full unlabeled MethodKG graph. Labels are only used for the 2,500 benchmark award nodes. For strict temporal claims, compare with your leakage-safe historical-feature baselines and split-safe evaluation results.
