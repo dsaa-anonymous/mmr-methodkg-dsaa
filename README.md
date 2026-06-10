@@ -855,35 +855,6 @@ experiments/ = model outputs, metrics, predictions, and run configs
 paper_outputs/ = compact summaries and tables used for the paper
 ```
 
-### Can Artifacts Be Regenerated?
-
-Yes. If `artifacts/features/` is missing, the relevant scripts will regenerate embeddings when run with `--overwrite` or when the cache is absent.
-
-For MiniLM embeddings:
-
-```bash
-python src/text_graph/late_fusion/create_text_embeddings.py \
-  --embedding_family minilm \
-  --overwrite
-```
-
-For SciBERT embeddings:
-
-```bash
-python src/text_graph/late_fusion/create_text_embeddings.py \
-  --embedding_family scibert \
-  --overwrite
-```
-
-For text-only runs that include embedding baselines:
-
-```bash
-python src/text_only/run_text_all_splits.py \
-  --input data/benchmark/methodkg_labeled_benchmark_v3_modeling.csv \
-  --overwrite \
-  --include_embeddings
-```
-
 
 ## 12. Main Result Interpretation
 
