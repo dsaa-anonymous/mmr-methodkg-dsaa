@@ -24,7 +24,7 @@ Recommended:
 
 ```text
 cleaned_nsf_awards_2000_2025.csv
-benchmark_v2/methodkg_labeled_benchmark_v2_modeling.csv
+benchmark_v2/methodkg_labeled_benchmark_v3_modeling.csv
 award_pi_edges.csv
 ```
 
