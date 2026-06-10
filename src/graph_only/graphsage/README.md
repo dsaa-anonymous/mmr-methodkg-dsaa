@@ -193,15 +193,3 @@ zip -r methodkg_graphsage_structural_results.zip \
   graphsage_structural_primary_summary.csv \
   -x "*/graphsage_model.pt"
 ```
-
-You can omit `graphsage_model.pt` to keep the zip small.
-
-## How to interpret this model
-
-This is a **graph-only structural model**. It should not be expected to beat text-only baselines, because your labels are largely about methodology reporting in the abstract. A useful outcome is:
-
-- better than dummy,
-- competitive with historical graph features / node2vec / metapath2vec,
-- maybe helpful on integration/design under transfer or cold-start splits.
-
-The main ICDM result will likely come later from **Text+Graph late fusion** or **SciBERT/SPECTER/e5 + GraphSAGE**.
