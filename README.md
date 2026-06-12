@@ -387,14 +387,6 @@ TG = text+graph models
 Additional control families include metadata-only and text+metadata models.
 ## 8. Code Locations for T, G, and TG Models
 
-The paper uses the following shorthand:
-
-```text
-T  = text-only models
-G  = graph-only models
-TG = text+graph models
-```
-
 The repository separates these model families by input modality.
 
 ### 8.1 Text-Only Models: T
