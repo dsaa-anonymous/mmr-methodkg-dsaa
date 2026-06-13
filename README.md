@@ -455,8 +455,7 @@ The text+graph family is divided into four variants:
 ```text
 TG1 = late fusion
 TG2 = SimTeG GraphSAGE with text-only node features
-TG3 = SimTeG GraphSAGE with text + structural node features
-TG4 = Text-HGT
+TG3 = Text-HGT
 ```
 
 #### TG1: Late Fusion
@@ -530,7 +529,7 @@ paper_outputs/summaries/text_hgt_metrics_summary.csv
 paper_outputs/tables/text_hgt_test_metrics.csv
 ```
 
-TG4 uses text-initialized award nodes with heterogeneous graph message passing over the MethodKG schema.
+TG3 uses text-initialized award nodes with heterogeneous graph message passing over the MethodKG schema.
 
 ### 8.4 Metadata-Only and Text+Metadata Controls
 
@@ -650,7 +649,6 @@ Step 2: build the TG2 graph with text-only node features.
 python src/text_graph/simteg_graphsage/build_simteg_graphsage_graph.py \
   --text_embeddings artifacts/features/simteg_text_embeddings_scibert_v1/methodkg_simteg_text_embeddings.csv \
   --outdir artifacts/graphs/simteg_graphsage_data_scibert_text_only_v1 \
-  --no_structural_features \
   --overwrite
 ```
 
@@ -663,16 +661,6 @@ python src/text_graph/simteg_graphsage/run_simteg_all_splits.py \
   --overwrite
 ```
 
-Step 4: save TG2 summaries under variant-specific names.
-
-```bash
-cp paper_outputs/summaries/simteg_graphsage_metrics_summary.csv \
-   paper_outputs/summaries/tg2_simteg_graphsage_text_only_metrics_summary.csv
-
-cp paper_outputs/tables/simteg_graphsage_test_metrics.csv \
-   paper_outputs/tables/tg2_simteg_graphsage_text_only_test_metrics.csv
-```
-
 Expected outputs:
 
 ```text
@@ -683,59 +671,7 @@ paper_outputs/summaries/tg2_simteg_graphsage_text_only_metrics_summary.csv
 paper_outputs/tables/tg2_simteg_graphsage_text_only_test_metrics.csv
 ```
 
-### 9.5 TG3: SimTeG GraphSAGE with Text + Structural Node Features
-
-TG3 uses the same SciBERT text embeddings as TG2 but keeps the default structural node features during graph construction.
-
-Step 1: create SciBERT text embeddings if they do not already exist.
-
-```bash
-python src/text_graph/simteg_graphsage/create_simteg_text_embeddings.py \
-  --model_name allenai/scibert_scivocab_uncased \
-  --backend transformers \
-  --outdir artifacts/features/simteg_text_embeddings_scibert_v1 \
-  --overwrite
-```
-
-Step 2: build the TG3 graph with text + structural node features.
-
-```bash
-python src/text_graph/simteg_graphsage/build_simteg_graphsage_graph.py \
-  --text_embeddings artifacts/features/simteg_text_embeddings_scibert_v1/methodkg_simteg_text_embeddings.csv \
-  --outdir artifacts/graphs/simteg_graphsage_data_scibert_structural_v1 \
-  --overwrite
-```
-
-Step 3: train and evaluate TG3.
-
-```bash
-python src/text_graph/simteg_graphsage/run_simteg_all_splits.py \
-  --graph_dir artifacts/graphs/simteg_graphsage_data_scibert_structural_v1 \
-  --outdir experiments/text_graph/simteg_graphsage/tg3_text_structural \
-  --overwrite
-```
-
-Step 4: save TG3 summaries under variant-specific names.
-
-```bash
-cp paper_outputs/summaries/simteg_graphsage_metrics_summary.csv \
-   paper_outputs/summaries/tg3_simteg_graphsage_text_structural_metrics_summary.csv
-
-cp paper_outputs/tables/simteg_graphsage_test_metrics.csv \
-   paper_outputs/tables/tg3_simteg_graphsage_text_structural_test_metrics.csv
-```
-
-Expected outputs:
-
-```text
-artifacts/features/simteg_text_embeddings_scibert_v1/
-artifacts/graphs/simteg_graphsage_data_scibert_structural_v1/
-experiments/text_graph/simteg_graphsage/tg3_text_structural/
-paper_outputs/summaries/tg3_simteg_graphsage_text_structural_metrics_summary.csv
-paper_outputs/tables/tg3_simteg_graphsage_text_structural_test_metrics.csv
-```
-
-### 9.6 TG4: Text-HGT
+### 9.5 TG4: Text-HGT
 
 Text-HGT scripts are stored in:
 
@@ -757,7 +693,7 @@ paper_outputs/summaries/text_hgt_metrics_summary.csv
 paper_outputs/tables/text_hgt_test_metrics.csv
 ```
 
-### 9.7 Graph-Only Models: G
+### 9.6 Graph-Only Models: G
 
 Graph-only scripts are stored in:
 
@@ -779,7 +715,7 @@ paper_outputs/summaries/
 paper_outputs/tables/
 ```
 
-### 9.8 Metadata-Only Models
+### 9.7 Metadata-Only Models
 
 Metadata-only scripts are stored in:
 
@@ -854,15 +790,7 @@ graphsage_structural_metrics_summary.csv
 hgt_structural_metrics_summary.csv
 ```
 
-### 11.2 Paper Tables
-
-Compact table outputs are stored in:
-
-```text
-paper_outputs/tables/
-```
-
-### 11.3 Full Experiment Outputs
+### 11.2 Full Experiment Outputs
 
 Full experiment outputs are stored in:
 
@@ -886,7 +814,7 @@ run_config.json
 
 Large model files, checkpoints, and caches may also appear in experiment subfolders depending on the model family.
 
-### 11.4 Artifacts
+### 11.3 Artifacts
 
 Cached embeddings and derived feature files are stored in:
 
@@ -1250,7 +1178,3 @@ data/benchmark/methodkg_labeled_benchmark_v3_modeling.csv
 ```
 
 This file defines the official labels, feature columns, and split assignments used in the paper. Regenerating the benchmark with different split logic can change results. Therefore, the repository includes a comparison mode in the benchmark builder so reviewers can verify that regenerated benchmark outputs match the released benchmark before rerunning experiments.
-
-## 16. Contact
-
-For questions about the benchmark or reproduction, please contact the authors listed in the paper.
