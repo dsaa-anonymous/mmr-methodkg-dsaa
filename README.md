@@ -1125,7 +1125,7 @@ Classical baselines can be run on CPU. Transformer and graph neural models are f
 
 ### 13.20 Computing Infrastructure
 
-The experiments were run in a Python/conda environment with Python 3.11. GPU acceleration is optional for transformer and graph neural models but recommended for full reruns.
+The experiments were run in a Python TIDE Cluster environment with Python 3.11, and 1 NVIDIA A100 GPU (80 GB VRAM)
 
 ## 14. Minimal Reviewer Commands
 
