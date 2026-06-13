@@ -513,35 +513,8 @@ paper_outputs/tables/tg2_simteg_graphsage_text_only_test_metrics.csv
 
 TG2 uses SciBERT text embeddings as award-node features and disables additional structural node features during graph construction.
 
-#### TG3: SimTeG GraphSAGE with Text + Structural Node Features
 
-Stored in:
-
-```text
-src/text_graph/simteg_graphsage/
-```
-
-Main scripts:
-
-```text
-src/text_graph/simteg_graphsage/create_simteg_text_embeddings.py
-src/text_graph/simteg_graphsage/build_simteg_graphsage_graph.py
-src/text_graph/simteg_graphsage/run_simteg_all_splits.py
-```
-
-Outputs:
-
-```text
-artifacts/features/simteg_text_embeddings_scibert_v1/
-artifacts/graphs/simteg_graphsage_data_scibert_structural_v1/
-experiments/text_graph/simteg_graphsage/tg3_text_structural/
-paper_outputs/summaries/tg3_simteg_graphsage_text_structural_metrics_summary.csv
-paper_outputs/tables/tg3_simteg_graphsage_text_structural_test_metrics.csv
-```
-
-TG3 uses the same SciBERT text embeddings as TG2 but keeps the default structural node features during graph construction.
-
-#### TG4: Text-HGT
+#### TG3: Text-HGT
 
 Stored in:
 
