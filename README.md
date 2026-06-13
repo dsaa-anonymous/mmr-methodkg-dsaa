@@ -498,19 +498,19 @@ Main scripts:
 src/text_graph/simteg_graphsage/create_simteg_text_embeddings.py
 src/text_graph/simteg_graphsage/build_simteg_graphsage_graph.py
 src/text_graph/simteg_graphsage/run_simteg_all_splits.py
+src/text_graph/simteg_graphsage/summarize_simteg_results.py
 ```
 
 Outputs:
 
 ```text
 artifacts/features/simteg_text_embeddings_scibert_v1/
-artifacts/graphs/simteg_graphsage_data_scibert_text_only_v1/
-experiments/text_graph/simteg_graphsage/tg2_text_only/
-paper_outputs/summaries/tg2_simteg_graphsage_text_only_metrics_summary.csv
-paper_outputs/tables/tg2_simteg_graphsage_text_only_test_metrics.csv
+artifacts/graphs/simteg_graphsage_data_scibert_v1/
+experiments/text_graph/simteg_graphsage/
+paper_outputs/summaries/simteg_graphsage_metrics_summary.csv
 ```
 
-TG2 uses SciBERT text embeddings as award-node features and disables additional structural node features during graph construction.
+TG2 uses SciBERT text embeddings as award-node features during graph construction.
 
 
 #### TG3: Text-HGT
@@ -526,7 +526,6 @@ Typical outputs:
 ```text
 experiments/text_graph/text_hgt/
 paper_outputs/summaries/text_hgt_metrics_summary.csv
-paper_outputs/tables/text_hgt_test_metrics.csv
 ```
 
 TG3 uses text-initialized award nodes with heterogeneous graph message passing over the MethodKG schema.
@@ -544,7 +543,6 @@ Typical outputs:
 ```text
 experiments/metadata_only/
 paper_outputs/summaries/
-paper_outputs/tables/
 ```
 
 These controls test whether contextual gains come from structured award metadata rather than graph structure.
@@ -570,7 +568,6 @@ Outputs:
 experiments/text_only/text_only_all/
 artifacts/features/text_embeddings_minilm_v1/
 paper_outputs/summaries/text_only_all_metrics_summary.csv
-paper_outputs/tables/text_only_all_test_metrics.csv
 ```
 
 ### 9.2 TG1: Late Fusion SciBERT
@@ -588,8 +585,7 @@ Run TG1 late fusion with SciBERT embeddings:
 ```bash
 python src/text_graph/late_fusion/run_late_fusion_all_splits.py \
   --embedding_family scibert \
-  --overwrite \
-  --include_metadata
+  --overwrite
 ```
 
 Outputs:
@@ -598,7 +594,6 @@ Outputs:
 artifacts/features/text_embeddings_scibert_mean_v1/
 experiments/text_graph/late_fusion_scibert/
 paper_outputs/summaries/late_fusion_scibert_metrics_summary.csv
-paper_outputs/tables/late_fusion_scibert_test_metrics.csv
 ```
 
 ### 9.3 TG1: Late Fusion MiniLM
@@ -616,8 +611,7 @@ Run TG1 late fusion with MiniLM embeddings:
 ```bash
 python src/text_graph/late_fusion/run_late_fusion_all_splits.py \
   --embedding_family minilm \
-  --overwrite \
-  --include_metadata
+  --overwrite
 ```
 
 Outputs:
@@ -626,7 +620,6 @@ Outputs:
 artifacts/features/text_embeddings_minilm_v1/
 experiments/text_graph/late_fusion_minilm/
 paper_outputs/summaries/late_fusion_minilm_metrics_summary.csv
-paper_outputs/tables/late_fusion_minilm_test_metrics.csv
 ```
 
 ### 9.4 TG2: SimTeG GraphSAGE with Text-Only Node Features
@@ -648,7 +641,7 @@ Step 2: build the TG2 graph with text-only node features.
 ```bash
 python src/text_graph/simteg_graphsage/build_simteg_graphsage_graph.py \
   --text_embeddings artifacts/features/simteg_text_embeddings_scibert_v1/methodkg_simteg_text_embeddings.csv \
-  --outdir artifacts/graphs/simteg_graphsage_data_scibert_text_only_v1 \
+  --outdir artifacts/graphs/simteg_graphsage_data_scibert_v1 \
   --overwrite
 ```
 
@@ -656,8 +649,8 @@ Step 3: train and evaluate TG2.
 
 ```bash
 python src/text_graph/simteg_graphsage/run_simteg_all_splits.py \
-  --graph_dir artifacts/graphs/simteg_graphsage_data_scibert_text_only_v1 \
-  --outdir experiments/text_graph/simteg_graphsage/tg2_text_only \
+  --graph_dir artifacts/graphs/simteg_graphsage_data_scibert_v1 \
+  --outdir experiments/text_graph/simteg_graphsage \
   --overwrite
 ```
 
@@ -665,10 +658,9 @@ Expected outputs:
 
 ```text
 artifacts/features/simteg_text_embeddings_scibert_v1/
-artifacts/graphs/simteg_graphsage_data_scibert_text_only_v1/
-experiments/text_graph/simteg_graphsage/tg2_text_only/
-paper_outputs/summaries/tg2_simteg_graphsage_text_only_metrics_summary.csv
-paper_outputs/tables/tg2_simteg_graphsage_text_only_test_metrics.csv
+artifacts/graphs/simteg_graphsage_data_scibert_v1/
+experiments/text_graph/simteg_graphsage/primary/
+paper_outputs/summaries/simteg_graphsage_metrics_summary.csv
 ```
 
 ### 9.5 TG4: Text-HGT
