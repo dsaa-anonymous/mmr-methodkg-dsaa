@@ -186,7 +186,7 @@ If the cleaned awards file already exists, reviewers may rebuild flags, annotati
 
 ```bash
 python data/scripts/build_methodkg_pipeline.py \
-  --input data/processed/methodkg_outputs_v7_clustered_from_cleaned/cleaned_nsf_awards_2000_2025.csv \
+  --input data/processed/cleaned_nsf_awards_2000_2025.csv \
   --input_is_cleaned \
   --overwrite
 ```
