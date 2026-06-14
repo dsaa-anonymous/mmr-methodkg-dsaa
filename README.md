@@ -52,7 +52,7 @@ MMR-MethodKG/
 
   src/
     text_only/
-    metadata_only/
+    metadata_ablations/
     graph_only/
     text_graph/
 
@@ -61,6 +61,7 @@ MMR-MethodKG/
     metadata_only/
     graph_only/
     text_graph/
+    text_metadata_scibert
 
   paper_outputs/
     summaries/
