@@ -64,7 +64,6 @@ MMR-MethodKG/
 
   paper_outputs/
     summaries/
-    tables/
 
   requirements.txt
   README.md
@@ -1123,8 +1122,8 @@ The main empirical findings are:
 4. Text+graph models beat text-only only in selected settings.
 5. The clearest text+graph improvement is for design prediction under cross-program generalization.
 6. TG1 Late Fusion SciBERT is the strongest practical text+graph model.
-7. TG4 Text-HGT is useful among text+graph models for selected EDU-to-ENG transfer settings.
-8. TG2/TG3 SimTeG-style GraphSAGE is useful mainly for harder multiclass transfer/cold-start settings but does not surpass text-only overall.
+7. TG3 Text-HGT is useful among text+graph models for selected EDU-to-ENG transfer settings.
+8. TG2 SimTeG-style GraphSAGE is useful mainly for harder multiclass transfer/cold-start settings but does not surpass text-only overall.
 
 The main claims can be checked from:
 
@@ -1247,13 +1246,6 @@ The final adjudicated label file is:
 data/processed/final_gold_labels_adjudicated.csv
 ```
 
-Annotation and adjudication details are described in the paper. Label quality and reliability-related outputs are stored in:
-
-```text
-data/benchmark/methodkg_benchmark_v3_label_quality_report.csv
-data/benchmark/methodkg_benchmark_v3_reliability_report.csv
-```
-
 ### 13.10 Dependencies
 
 Dependencies are specified in:
@@ -1301,7 +1293,6 @@ Evaluation is integrated into each model-family script and writes metrics to:
 ```text
 experiments/
 paper_outputs/summaries/
-paper_outputs/tables/
 ```
 
 ### 13.13 Pretrained Models
