@@ -100,8 +100,6 @@ The `paper_outputs/summaries/` folder contains compact model-family summaries. T
 The code was developed with Python 3.11.
 
 ```bash
-conda create -n methodkg python=3.11 -y
-conda activate methodkg
 pip install -r requirements.txt
 ```
 
