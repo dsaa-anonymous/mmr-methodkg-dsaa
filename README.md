@@ -153,7 +153,7 @@ python data/scripts/build_methodkg_pipeline.py \
 This writes processed award files to:
 
 ```text
-data/processed/methodkg_outputs_v7_clustered_from_cleaned/
+data/processed/
 ```
 
 Expected processed outputs:
