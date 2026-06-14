@@ -257,8 +257,7 @@ def main():
             run(cmd, dry_run=args.dry_run)
 
     summary_name = f"late_fusion_{args.embedding_family}_metrics_summary.csv"
-    table_name = f"late_fusion_{args.embedding_family}_test_metrics.csv"
-    write_metrics_rollup(outroot, paper_outputs, summary_name, table_name)
+    write_metrics_rollup(outroot, paper_outputs, summary_name)
 
 
 if __name__ == "__main__":
