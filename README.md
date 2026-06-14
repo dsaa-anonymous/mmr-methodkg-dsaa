@@ -262,8 +262,9 @@ Award-institution edges:                     32,161
 Award-program edges:                         40,564
 PI-PI collaboration edges:                   98,347
 ```
-
 ### 5.2 Sampling Strata
+
+The labeled benchmark contains 2,500 awards. The counts in this section describe the **sampling strata used to select awards for annotation**, not the final supervised labels used for model training. In other words, these categories answer: *why was an award selected for the labeled benchmark?*
 
 The labeled benchmark was constructed using stratified sampling to include positive, negative, ambiguous, and hard-negative cases. The final sampling strata are:
 
@@ -277,11 +278,13 @@ Method-heavy background awards:                 294
 Random background awards:                       291
 ```
 
-These sampling strata describe how the benchmark was constructed. They are not the same as the supervised target-label distributions used for modeling.
+These strata sum to 2,500 because every labeled award came from exactly one sampling bucket. However, sampling strata are **not** the same as final modeling labels. After annotation and adjudication, awards from any sampling bucket may receive different supervised labels depending on the methodology signals actually present in the title and abstract.
 
 Because METHODKG-LABELED is enriched for methodology-relevant cases, label proportions in the labeled subset should not be interpreted as prevalence estimates for the full NSF award corpus.
 
 ### 5.3 Supervised Target Distribution
+
+The counts in this section describe the **derived supervised target labels used for prediction** over the same 2,500 awards described above. These categories answer: *what label does the model predict?*
 
 The released modeling file contains the derived target columns used for supervised prediction. The primary binary targets are:
 
@@ -306,6 +309,8 @@ target_mmr_multiclass:
   multi_method_not_mmr:     338   13.52%
   qual_only:                268   10.72%
 ```
+
+Thus, Sections 5.2 and 5.3 report two different distributions over the same 2,500 labeled awards: Section 5.2 reports the sampling-source distribution, while Section 5.3 reports the final prediction-target distribution.
 
 These labels should be interpreted as methodology-reporting signals in NSF award abstracts, not as verification of the complete methodology ultimately used in the funded projects.
 
