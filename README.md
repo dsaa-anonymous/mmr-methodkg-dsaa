@@ -2,7 +2,7 @@
 
 This repository contains the data-processing, benchmark-construction, training, evaluation, and paper-summary code for **MMR-MethodKG**, a temporal text-graph benchmark for predicting mixed-methods methodology-reporting signals in NSF STEM and engineering education award abstracts.
 
-The repository is organized to support the IEEE ICDM reproducibility checklist. It includes dataset statistics, preprocessing steps, train/validation/test split definitions, training and evaluation code, model-family outputs, and paper-level summary files.
+The repository is organized to support the IEEE DSAA reproducibility checklist. It includes dataset statistics, preprocessing steps, train/validation/test split definitions, training and evaluation code, model-family outputs, and paper-level summary files.
 
 ## 1. Repository Structure
 
